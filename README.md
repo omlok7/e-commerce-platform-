@@ -138,7 +138,7 @@ PORT=5000
 
 # 📸 Application Preview
 
-(Add screenshots here)
+
 
 * Home page
 * Product details
