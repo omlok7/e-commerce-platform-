@@ -1,0 +1,134 @@
+LZZkO0rdSuzFtyrx
+
+
+Ask yourself these 5 questions:
+
+What does it do?
+Example: findOne() searches for one document.
+What does it return?
+A document or null.
+Why do we use it?
+To check if a user already exists.
+When should we use it?
+Before creating a new user or during login.
+What happens if it fails?
+It throws an error, so we handle it with try...catch.
+
+
+
+
+
+
+
+
+ <image src={banner1}  alt=""   />   
+      <div className="description ">
+        <h2>burger</h2>
+        <p className="price"> $4.2<span>$5.6</span></p>
+        <p classNme ="para">khgyigiihhgfudtxtxtufyugiygyigiytyniunnbyf</p>
+        <button className="btn">Buy now</button>
+      </div>
+
+
+
+
+
+
+
+
+
+       <div className="col-xl-3 col-lg-4 col-md-6 mb-4">
+      <Card
+        className="h-100 border-0 shadow-sm product-card"
+        style={{
+          transition: "0.3s",
+          overflow: "hidden",
+        }}
+      >
+        {/* IMAGE */}
+
+        <div
+          className="position-relative bg-light"
+          style={{
+            height: "220px",
+          }}
+        >
+          <Card.Img
+            variant="top"
+            src={
+              product.image
+                ? `http://localhost:5000/uploads/${product.image}`
+                : "https://placehold.co/400x300"
+            }
+            alt={product.name}
+            style={{
+              height: "220px",
+
+              objectFit: "contain",
+
+              padding: "15px",
+            }}
+          />
+
+          {/* STOCK */}
+
+          <span
+            className={
+              product.stock > 0
+                ? "position-absolute top-0 end-0 m-2 badge bg-success"
+                : "position-absolute top-0 end-0 m-2 badge bg-danger"
+            }
+          >
+            {product.stock > 0 ? "In Stock" : "Sold Out"}
+          </span>
+        </div>
+
+        <Card.Body className="d-flex flex-column">
+          {/* CATEGORY */}
+
+          <small className="text-muted mb-2">{product.category}</small>
+
+          <Card.Title
+            className="fw-bold"
+            style={{
+              fontSize: "18px",
+            }}
+          >
+            {product.name}
+          </Card.Title>
+
+          <Card.Text
+            className="text-secondary"
+            style={{
+              height: "45px",
+
+              overflow: "hidden",
+            }}
+          >
+            {product.description}
+          </Card.Text>
+
+          <div className="mt-auto">
+            <h4 className="text-primary fw-bold">{product.price} TND</h4>
+
+            <div className="d-flex gap-2">
+              <Link
+                to={`/product/${product._id}`}
+                className="btn btn-outline-dark flex-fill"
+              >
+                View
+              </Link>
+
+              <Button
+                variant="warning"
+                className="flex-fill fw-bold"
+                disabled={product.stock === 0}
+                onClick={() => onAddToCart(product)}
+              >
+                🛒 Add
+              </Button>
+            </div>
+          </div>
+        </Card.Body>
+      </Card>
+    </div>

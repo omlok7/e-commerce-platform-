@@ -1,0 +1,287 @@
+.orders-page {
+
+    font-family:"Poppins",sans-serif;
+
+    margin-top:60px;
+
+}
+
+
+
+.orders-title {
+
+    font-size:38px;
+
+    font-weight:500;
+
+}
+
+
+
+.orders-subtitle {
+
+    color:#777;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+.empty-orders {
+
+    padding:40px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+
+
+.order {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 10px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+
+.order-top {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.order-label {
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+.order-top h3 {
+
+    margin:5px 0;
+
+    font-size:25px;
+
+}
+
+
+
+
+.order-right {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+}
+
+
+
+
+
+.status {
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    background:#eee;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+.status.pending {
+
+    background:#fff3cd;
+
+    color:#856404;
+
+}
+
+
+
+.status.completed {
+
+    background:#d1e7dd;
+
+    color:#0f5132;
+
+}
+
+
+
+.status.cancelled {
+
+    background:#f8d7da;
+
+    color:#842029;
+
+}
+
+
+
+
+
+
+
+.product {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px 0;
+
+    border-top:1px solid #eee;
+
+}
+
+
+
+
+
+.product img {
+
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+
+}
+
+
+
+
+
+.product-info h4 {
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+.product-info p {
+
+    margin:5px 0;
+
+    color:#777;
+
+}
+
+
+
+.product-total {
+
+    margin-left:auto;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.order-top{
+
+display:block;
+
+}
+
+
+
+.order-right{
+
+align-items:flex-start;
+
+margin-top:15px;
+
+}
+
+
+
+.product{
+
+display:block;
+
+}
+
+
+
+.product-total{
+
+display:block;
+
+margin-top:15px;
+
+}
+
+
+}
